@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "prism_backend": {
+      "main": "src/prism_backend/main.mo",
+      "type": "motoko"
+    },
+    "prism_frontend": {
+      "dependencies": [
+        "prism_backend"
+      ],
+      "source": [
+        "src/prism_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "prism_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
